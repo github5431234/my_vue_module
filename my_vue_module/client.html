@@ -1,0 +1,76 @@
+<body style="margin:0">
+    <div >
+      <div id="first">
+        <head01 ref="head01" v-bind:head_info="head_info"></head01>
+      </div>
+    </div>
+  <script>
+  var myVue = new Vue({el:"#first",
+  data:{
+    head_info:[
+        {logo_src:"",
+          self:{name:"基本设置",key_:"A",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+         child_node:[
+           [
+             {
+              self:{name:"自动售货机设置",key_:"Alt+Q",func:function(){alert("进入自动售货机页面")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+              child_node:[]
+            },
+            {
+              self:{name:"自动售货机异常",key_:"Alt+W",func:function(){alert("设置1-2")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+              child_node:[]
+            },
+          ],
+           [
+             {self:{name:"管理员账号管理",key_:"Alt+E",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+              child_node:[]
+            }],
+         ]
+        },
+        {logo_src:"",
+          self:{name:"收支查看",key_:"S",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+          child_node:[
+           [
+             {
+              self:{name:"日收益",key_:"Alt+A",func:function(){alert("B")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+              child_node:[
+                          [
+                            {self:{name:"设置22-1",key_:"Alt+P",func:function(){alert("???")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                              child_node:[]
+                            },
+                            {self:{name:"设置22-2",key_:"Alt+O",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                              child_node:[]
+                            }
+                          ]
+                         ]
+            }]
+         ]
+        },{logo_src:"",
+          self:{name:"评论管理",key_:"D",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+          child_node:[
+           [
+             {
+              self:{name:"小程序评论",key_:"Alt+M",func:function(){alert("eeee")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+              child_node:[]
+            }]
+         ]
+        },{logo_src:"",
+          self:{name:"会员管理",key_:"F",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+          child_node:[
+           [
+             {
+              self:{name:"会员信息",key_:"Alt+L",func:function(){alert("eeee")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+              child_node:[]
+            }]
+         ]
+        },
+    ]
+  },mounted(){
+    // that=this;
+    //   this.$refs.head01.init(that)
+      },
+  methods:{
+  }
+  })
+  </script>
+  </body>

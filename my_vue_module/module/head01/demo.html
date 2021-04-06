@@ -1,0 +1,92 @@
+<body style="margin:0">
+  <div >
+    <div id="first">
+      <head01 ref="head01" v-bind:head_info="head_info"></head01>
+    </div>
+  </div>
+<script>
+var myVue = new Vue({el:"#first",
+data:{
+  head_info:[
+      {logo_src:"",
+        self:{name:"设置",key_:"A",func:function(){alert("?")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+       child_node:[
+         [
+           {
+            self:{name:"设置1-1",key_:"Alt+Q",func:function(){alert("设置1-1")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+            child_node:[
+                        [
+                          {self:{name:"设置1-1-1",key_:"Alt+P",func:function(){alert("设置1-1")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                            child_node:[]
+                          },
+                          {self:{name:"设置1-1-2",key_:"Alt+O",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                            child_node:[]
+                          }
+                        ],
+                        [
+                          {self:{name:"设置1-1-3",key_:"Alt+P",func:function(){alert("设置1-1")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                            child_node:[]
+                          },
+                          {self:{name:"设置1-1-4",key_:"Alt+O",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                            child_node:[]
+                          }
+                        ],
+                       ]
+          },
+          {
+            self:{name:"设置1-2",key_:"Alt+Q",func:function(){alert("设置1-1")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+            child_node:[
+                        [
+                          {self:{name:"设置1-1",key_:"Alt+P",func:function(){alert("设置1-1")},click_flag:true,null_or_block:false,show:none,over:none},
+                            child_node:[]
+                          },
+                          {self:{name:"设置1-2",key_:"Alt+O",func:null,click_flag:true,null_or_block:false,show:none,over:none},
+                            child_node:[]
+                          }
+                        ],
+                        [
+                          {self:{name:"设置1-3",key_:"Alt+P",func:function(){alert("设置1-1")},click_flag:true,null_or_block:false,show:none,over:none},
+                            child_node:[]
+                          },
+                          {self:{name:"设置1-4",key_:"Alt+O",func:null,click_flag:true,null_or_block:false,show:none,over:none},
+                            child_node:[]
+                          }
+                        ],
+                       ]
+          },
+        ],
+         [
+           {self:{name:"设置1-3",key_:"Alt+W",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+            child_node:[]
+          }],
+       ]
+      },
+      {logo_src:"",
+        self:{name:"查看",key_:"B",func:function(){alert("B")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+        child_node:[
+         [
+           {
+            self:{name:"设置22",key_:"Alt+Q",func:function(){alert("B")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+            child_node:[
+                        [
+                          {self:{name:"设置22-1",key_:"Alt+P",func:function(){alert("???")},click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                            child_node:[]
+                          },
+                          {self:{name:"设置22-2",key_:"Alt+O",func:null,click_flag:true,null_or_block:false,show:none,over:none,onfunc_:none},
+                            child_node:[]
+                          }
+                        ]
+                       ]
+          }]
+       ]
+      },
+  ]
+},mounted(){
+  // that=this;
+  //   this.$refs.head01.init(that)
+    },
+methods:{
+}
+})
+</script>
+</body>

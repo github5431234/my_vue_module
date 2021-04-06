@@ -1,0 +1,18 @@
+<div style="width:555px">
+    <div id="first">
+      <alert01 v-bind:button1_name="name1" input_name="username" button2_url="https://autumnfish.cn/api/user/check"></alert01>
+      <alert01 v-bind:button1_name="name2"></alert01>
+    </div>
+  </div>
+<script>
+var myVue = new Vue({el:"#first",
+data:{
+  name1:"按钮1",
+  name2:"按钮2",
+  
+},
+methods:{
+func(){return {"username":"33333333"}}
+}
+})
+</script>
